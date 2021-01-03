@@ -1,9 +1,6 @@
-module;
-#include <string>
 export module cis17a;
 
-export import std.core;
-import std.memory;
+import std.core;
 
 namespace cis17a
 {
