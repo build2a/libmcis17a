@@ -1,7 +1,5 @@
 module cis17a;
 
-import std.core;
-
 namespace cis17a
 {
     void say_hello(std::ostream& o, const std::string& n)
