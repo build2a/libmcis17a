@@ -1,6 +1,6 @@
 export module cis17a;
 
-import std.core;
+export import std.core;
 import std.memory;
 
 export namespace cis17a
