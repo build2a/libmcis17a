@@ -12,5 +12,5 @@ export namespace cis17a
         say_hello(std::ostream&, const std::string& name);
 
     template<typename ... Args>
-    __symexport std::string format(const std::string& format, Args ... args);
+    std::string format(const std::string& format, Args ... args);
 }
