@@ -1,4 +1,4 @@
-import libs = libmcis17a%liba{mcis17a}
+import libs = libmcis17a%lib{mcis17a}
 #import libs += libstd-modules%liba{std-modules}
 
 exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
