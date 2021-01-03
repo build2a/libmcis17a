@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libmcis17a/
+}
+
+export $out_root/libmcis17a/$import.target

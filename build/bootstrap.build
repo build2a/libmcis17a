@@ -1,0 +1,7 @@
+project = libmcis17a
+
+using version
+using config
+using test
+using install
+using dist
