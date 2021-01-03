@@ -10,6 +10,7 @@ export namespace cis17a
     __symexport
         void say_hello(std::ostream&, const std::string& name);
 
+    // export templates: https://docs.microsoft.com/en-us/cpp/cpp/source-code-organization-cpp-templates
     template<typename... Args>
     __symexport
         std::string format(const std::string& format, Args... args)
