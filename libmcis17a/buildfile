@@ -5,13 +5,16 @@ impl_libs = # Implementation dependencies.
 
 lib{mcis17a}: {cxx mxx}{**} $impl_libs $intf_libs
 
+# Build options.
+#
+cxx.poptions =+ "-I$out_root" "-I$src_root"
 
 # Export options.
 #
 lib{mcis17a}:
 {
   cxx.export.poptions = "-I$out_root" "-I$src_root"
-  cxx.export.libs = $intf_libs
+  #cxx.export.libs = $intf_libs
 }
 
 # For pre-releases use the complete version to make sure they cannot be used
