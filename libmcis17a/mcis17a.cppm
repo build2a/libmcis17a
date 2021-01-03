@@ -1,15 +1,12 @@
-#pragma once
+export module cis17a;
 
-#include <iosfwd>
-#include <string>
+import std.core;
 
-#include <libmcis17a/export.hxx>
-
-namespace cis17a
+export namespace cis17a
 {
     // Print a greeting for the specified name into the specified
     // stream. Throw std::invalid_argument if the name is empty.
     //
-    LIBMCIS17A_SYMEXPORT void
+    __symexport void
         say_hello(std::ostream&, const std::string& name);
 }

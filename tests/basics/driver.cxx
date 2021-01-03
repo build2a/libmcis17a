@@ -1,9 +1,6 @@
 #include <cassert>
-#include <sstream>
-#include <stdexcept>
-
-#include <libmcis17a/version.hxx>
-#include <libmcis17a/mcis17a.hxx>
+import cis17a;
+import std.core;
 
 int main()
 {

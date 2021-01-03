@@ -1,12 +1,24 @@
-cxx.std = latest
+cxx.std = experimental
+
+cxx.features.symexport = true
+
+# Indicate that our sources do not use #include and module imports do not
+# depend on the preprocessor.
+cxx.preprocessed = modules
 
 using cxx
+
+assert $cxx.features.modules 'c++ compiler does not support modules'
 
 hxx{*}: extension = hxx
 ixx{*}: extension = ixx
 txx{*}: extension = txx
 cxx{*}: extension = cxx
+mxx{*}: extension = cppm
 
 # The test target for cross-testing (running tests under Wine, etc).
 #
 test.target = $cxx.target
+
+if ($cxx.class == 'msvc')
+  cxx.coptions += /wd5211

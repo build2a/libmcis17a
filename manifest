@@ -8,4 +8,4 @@ url: https://example.org/libmcis17a
 email: te.li@mvc.edu
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
-#depends: libhello ^1.0.0
+#depends: libstd-modules

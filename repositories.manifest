@@ -8,4 +8,4 @@ summary: libmcis17a project repository
 
 #:
 #role: prerequisite
-#location: https://git.build2.org/hello/libhello.git
+#location: https://git.build2.org/libstd-modules.git#v0.13.0

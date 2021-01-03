@@ -1,7 +1,4 @@
-#include <libmcis17a/mcis17a.hxx>
-
-#include <ostream>
-#include <stdexcept>
+module cis17a;
 
 using namespace std;
 
