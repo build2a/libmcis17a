@@ -11,7 +11,7 @@ export namespace cis17a
     __symexport void
         say_hello(std::ostream&, const std::string& name);
 
-    export template<typename ... Args>
+    __symexport template<typename ... Args>
         std::string format(const std::string& format, Args ... args)
     {
         int size = std::snprintf(nullptr, 0, format.c_str(), args ...) + 1; // Extra space for '\0'
