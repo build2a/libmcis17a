@@ -3,7 +3,7 @@ intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
 #import impl_libs += libhello%lib{hello}
 
-lib{mcis17a}: {cxx mxx}{**} $impl_libs $intf_libs
+liba{mcis17a}: {cxx mxx}{**} $impl_libs $intf_libs
 
 # Build options.
 #
@@ -11,7 +11,7 @@ cxx.poptions =+ "-I$out_root" "-I$src_root"
 
 # Export options.
 #
-lib{mcis17a}:
+liba{mcis17a}:
 {
   cxx.export.poptions = "-I$out_root" "-I$src_root"
   #cxx.export.libs = $intf_libs
@@ -22,9 +22,9 @@ lib{mcis17a}:
 # for details on the version.* variable values.
 #
 if $version.pre_release
-  lib{mcis17a}: bin.lib.version = @"-$version.project_id"
+  liba{mcis17a}: bin.lib.version = @"-$version.project_id"
 else
-  lib{mcis17a}: bin.lib.version = @"-$version.major.$version.minor"
+  liba{mcis17a}: bin.lib.version = @"-$version.major.$version.minor"
 
 # Install into the libmcis17a/ subdirectory of, say, /usr/include/
 # recreating subdirectories.
