@@ -1,3 +1,5 @@
+module;
+#include <string>
 export module cis17a;
 
 import std.core;
