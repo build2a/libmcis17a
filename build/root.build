@@ -1,6 +1,8 @@
 cxx.std = experimental
 
 cxx.features.symexport = true
+# enable modules feature
+cxx.features.modules = true
 
 # Indicate that our sources do not use #include and module imports do not
 # depend on the preprocessor.
